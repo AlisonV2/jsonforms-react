@@ -1,0 +1,23 @@
+{   
+    "type": "object",
+    "properties": {
+        "email": {
+            "type": "string"
+        },
+        "service": {
+            "type": "string",
+            "enum": [
+                "Developpement", 
+                "Marketing", 
+                "Commerce", 
+                "Produit", 
+                "Finance", 
+                "Autre"
+                ]
+            }
+        },
+    "required": [
+        "email",
+        "service"
+      ]
+  }
