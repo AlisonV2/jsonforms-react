@@ -3,7 +3,7 @@ import schema from './data/schema.json';
 import './App.css';
 import { JsonForms } from '@jsonforms/react';
 import { FormContainer } from './styles/form-container.styles';
-import { CustomButton, CustomButtonContainer } from "./styles/custom-button.styles";
+import CustomButton from "./components/custom-button.component";
 import { materialCells, materialRenderers } from '@jsonforms/material-renderers';
 
 
@@ -16,9 +16,7 @@ function App() {
         renderers={materialRenderers}
         cells={materialCells}
       />
-      <CustomButtonContainer>
-            <CustomButton>Envoyer</CustomButton>
-      </CustomButtonContainer>
+    <CustomButton type='submit'>Envoyer</CustomButton>
     </FormContainer>
   );
 }

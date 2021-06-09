@@ -1,13 +1,7 @@
 import styled from 'styled-components';
 
-export const CustomButtonContainer = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top : 3rem;
-`
-export const CustomButton = styled.button`
-background-color: black;
+export const CustomButtonContainer = styled.button`
+  background-color: black;
   color: white;
   border: none;
   min-width: 165px;
@@ -24,7 +18,7 @@ background-color: black;
   display: flex;
   justify-content: center;
   &:hover {
-    background-color: white;
+    background-color: white;ner
     color: black;
     border: 1px solid black;
   }
